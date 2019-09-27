@@ -1,0 +1,84 @@
+
+
+body{
+    background-color : #232323;
+    margin: 0;
+    
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+
+
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+
+    /*float make every elements be in the same line   */
+    float: left;
+    margin: 1.66%;
+
+    /*create those rounded corners of the squares  */
+    border-radius:20%; 
+
+    /* creates the fade effect */
+    transition: background 0.5s;
+
+}
+#colorDisplay{
+    font-size: 200%;
+}
+#container{
+    max-width: 600px ;
+
+    /* 0 on the top and bottom and auto on the left and right 
+    to center the squares
+    */
+    margin: 20px auto;
+}
+
+h1{
+    text-align: center;
+    color:bisque;
+    background: steelblue;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding:20px 0 ;
+    margin: 0;
+}
+#message{
+    /* empty span to create spacing between the buttons  */
+    display: inline-block;
+    width: 20%;
+}
+#stripe{
+    background: white;
+    height:30px;
+    text-align: center;
+    color: black;
+
+}
+
+button{
+    text-transform: uppercase;
+    border: none;
+    background:none;
+    /* to take  100% of the containig element (the stripe)*/
+    height: 100%;
+    /* bolded */
+    font-weight: 700;
+    color: steelblue;
+   
+    /* whenever anything happen ("all") how long will it take 
+    to show the change  */
+    transition: all 0.5s;
+
+    /* removes the outline border which pop up
+    after clicking the botton */
+    outline: none;
+}
+
+button:hover{
+    color: white;
+    background: steelblue;
+}
